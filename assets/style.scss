@@ -1,3 +1,89 @@
+
+@import '_menu';
+
+a{
+    text-decoration:none;
+}
+
+/*Typografia*/
+
+$heading-font: "Nunito", Arial, sans-serif;
+$body-font: "Volte", Arial, sans-serif;
+
+@mixin typography {
+    h1, h2 {
+        font-family: $heading-font;
+        color: rgb(12, 12, 12);
+        font-weight: 700;
+        letter-spacing: -1px;
+    }
+    p {
+        font-size: 20px;
+        line-height: 1.2;
+        font-family: $body-font;
+        color: #6a6f77;
+        letter-spacing: -1px;
+        font-weight: 600;
+    }
+
+    h1 {
+        font-size: calc(1.375rem + 2.5vw);
+    }
+
+    h2 {
+        font-size: calc(1.375rem + 2.5vw);
+    }
+
+    @media (min-width: 992px) {
+        h1 {
+            font-size: 2.8rem;
+        }
+        h2 {
+            font-size: 2.7rem;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        h1 {
+            font-size: 3.6rem;
+        }
+        h2 {
+            font-size: 2rem;
+        }
+    }
+}
+
+
+@include typography;
+
+
+
+#hero-cover-orange{
+    .container{
+        max-width:1240px;
+    }
+}
+
+
+#hero-cover-world{
+    .container{
+        //max-width:1240px;
+    }
+}
+
+
+
+
+
+
+
+/*
+*
+*    WORLDMAP
+*
+*/
+
+
 // Variables
 $map-font-label: "Nunito", Arial, sans-serif;
 
@@ -5,8 +91,11 @@ $map-font-label: "Nunito", Arial, sans-serif;
     max-width: 640px;
     width: 100%;
     position: relative;
-    margin: 0 auto;
     box-sizing: border-box;
+
+    @media (min-width: 768px) {
+        max-width:82%;
+    }
 
     .w-info {
         position: absolute;
@@ -69,10 +158,13 @@ $map-font-label: "Nunito", Arial, sans-serif;
             background: linear-gradient(to right, rgba(71, 187, 229, 1) 5%, rgba(52, 164, 222, 0.8) 100%);
             z-index: 999;
 
-            font: 500 13px var(--map-font-label);
+            font: 500 13px $map-font-label;
         }
 
         .w-status {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             border: 1px solid #6de084;
             border-radius: 20px;
             min-width: 80px;
@@ -81,12 +173,19 @@ $map-font-label: "Nunito", Arial, sans-serif;
             padding: 4px 8px;
             font-size: 13px;
             color: #fff;
-            font: 500 12px var(--map-font-label);
+            font: 500 12px $map-font-label;
             background: linear-gradient(
                 to right,
                 rgba(58, 214, 91, 1) 5%,
                 /* Start color with 50% opacity */ rgba(42, 135, 139, 0.4) 100% /* End color with 50% opacity */
             );
+
+            > .material-symbols-outlined{
+                display:none;
+                font-size:14px;
+                zoom:1 !important;
+                margin-right:1px;
+            }
         }
     }
 
@@ -100,7 +199,6 @@ $map-font-label: "Nunito", Arial, sans-serif;
         }
     }
 }
-
 
 
 // Faz o efeito do pulse ( not used )
@@ -184,3 +282,83 @@ $map-font-label: "Nunito", Arial, sans-serif;
     
 }
   
+
+
+
+$world-h1-font-family: "Volte", Arial, sans-serif;
+.wrap-world-slogan{
+
+
+    h1{
+        font-weight: 800;
+        line-height: 1.1;
+        letter-spacing: -1.5px;
+        font-family: "Volte", Arial, sans-serif;
+    }
+
+    ._slogan{
+        display:block;
+        font-size: 19px;
+        line-height: 1.4;
+        font-family: "Nunito", Arial, sans-serif;
+        color: #FFF;
+        opacity:.6;
+        font-weight: 300;
+        max-width: 90%;
+        @media (min-width: 992px) {
+            max-width: 450px;
+            font-size: 21px;
+        }
+    }
+
+    ._mark{
+        background: linear-gradient(90deg, rgb(79, 204, 237) 0%, rgb(185, 207, 255) 100%) text;
+        -webkit-text-fill-color: transparent;
+    }
+
+
+    h1, h2 {
+        font-family: $world-h1-font-family;
+        color: #fff;
+        font-weight: 600;
+        letter-spacing: -1px;
+    }
+    p {
+        font-size: 20px;
+        line-height: 1.2;
+        font-family: $body-font;
+        color: #6a6f77;
+        letter-spacing: -1px;
+        font-weight: 600;
+    }
+
+    h1 {
+        font-size: calc(1.375rem + 3.2vw);
+    }
+
+    h2 {
+        font-size: calc(1.375rem + 2.5vw);
+    }
+
+    @media (min-width: 992px) {
+        h1 {
+            font-size: 2.8rem;
+        }
+        h2 {
+            font-size: 2.7rem;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        h1 {
+            font-size: 3.4rem;
+        }
+        h2 {
+            font-size: 2rem;
+        }
+    }
+    
+}
+
+
+
