@@ -1,13 +1,8 @@
-
-
-
-
 /*
     JS ara animar o Mapa e posicionar os elementos
 */
-$(document).ready(function() {
+$(window).on("load", function() {
 
-    $('#mapaImg').css('opacity', '.8');
     startAnimation(1000);
 
     for (let i = 1; i <= 3; i++) {
@@ -28,8 +23,6 @@ function onEndLines(line){
     if(line === 3){
         lineString = 'third';
     }
-
-    console.log(line);
 
     $('#' + lineString + 'Circle').css('visibility', 'visible');
     $('#' + lineString + 'Label').css('opacity', '1');
@@ -56,10 +49,7 @@ function onEndLines(line){
 function nextAnimation(line){
     let nextAnimationString = line === 1 ? 'second' : 'third';
     $('#' + nextAnimationString + 'LineSvg').css('visibility', 'visible');
-    var animationMask = $('#' + nextAnimationString + 'Mask');
-    var animateMotion = $('#' + nextAnimationString + 'LineSvg animateMotion');
-    animationMask.find('animate').eq(0).get(0).beginElement();
-    animateMotion.get(0).beginElement();
+    $('#' + nextAnimationString + 'Mask').find('animate').eq(0).get(0).beginElement();
 }
 
 
@@ -73,10 +63,7 @@ function startAnimation(time){
     setTimeout(function(){
         restartAnimation();
         $('#firstLineSvg').css('visibility', 'visible');
-        var firstMask = $('#firstMask');
-        var firstAnimateMotion = $('#firstLineSvg animateMotion');
-        firstMask.find('animate').eq(0).get(0).beginElement();
-        firstAnimateMotion.get(0).beginElement();
+        $('#firstMask').find('animate').eq(0).get(0).beginElement();
     }, time);
 }
 
