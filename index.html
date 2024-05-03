@@ -91,7 +91,7 @@ background: url(https://static.wixstatic.com/media/e36e55_f0012f4d5e024c6abe1a78
                 <!--Logo-->
                 <!-- <a href="/"><img src="https://i.ibb.co/d0DJQff/bigdata-logo.png" class="logo"></a> -->
 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="110" height="49" viewBox="0 0 98 38" fill="none" style="margin: 3px 0;margin-right: -56px;transform:scaley(-1);">
+                    <svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98 38" fill="none">
                     <g clip-path="url(#clip0_4507_197465)">
                     <path d="M18.0386 36.9116V37.9716C13.1872 37.7057 8.62146 35.5937 5.27771 32.0687C1.93396 28.5437 0.0656702 23.8729 0.0560303 19.0142H1.11606C1.12978 23.5907 2.88785 27.9897 6.03207 31.3151C9.17629 34.6404 13.4701 36.6419 18.0386 36.9116Z" fill="#1c49ad"/>
                     <path d="M25.3641 1.06949L24.9572 2.01594C23.0619 1.37229 21.0718 1.05233 19.0702 1.06949C18.0074 1.06952 16.9466 1.16135 15.8996 1.34396V0.265011C16.9475 0.0902764 18.0079 0.00164486 19.0702 4.63677e-06C21.2135 -0.00149363 23.3416 0.360119 25.3641 1.06949Z" fill="#1c49ad"/>
@@ -113,19 +113,36 @@ background: url(https://static.wixstatic.com/media/e36e55_f0012f4d5e024c6abe1a78
                     </clipPath>
                     </defs>
                     </svg>
-                    <span style="font-family: Volte;font-size: 25.5px;font-weight: 500;line-height: 20px;color: #1f1845;letter-spacing: -1px;margin-bottom: -2.5px;margin-left: -1px;">Pesquise</span>
+                    <span class="logo-slogan">Pesquise</span>
 
 
                 <!--Links-->
-                <a href="/" class="d-none d-md-block" style=" min-width: 200px; color: #aaa; background: #fbfbfb; padding: 6px 12px 6px; margin-left: 20px; border: 1px solid #ddd; font-size: 15px; border-radius: 4px; ">Consultar empresa por CNPJ ou Nome</a>
+                <a href="/" class="d-none d-md-flex justify-content-center align-items-center" style=" min-width: 200px; color: #b3b8be; padding: 6px 16px 6px; margin-left: 20px; border: 1px solid #f4f1f1; font-size: 15px; border-radius: 20px; background: linear-gradient(0deg, rgba(105, 145, 214, .08), rgba(105, 145, 214, .08)); ">
+                    Consultar empresa pelo nome ou CNPJ
+                    <svg style="margin-left:30px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="16" width="16" class="text-neutral-900" alt="Search">
+                        <path d="M23.38,21.62l-6.53-6.53a9.15,9.15,0,0,0,1.9-5.59,9.27,9.27,0,1,0-3.66,7.36l6.53,6.53a1.26,1.26,0,0,0,1.76,0A1.25,1.25,0,0,0,23.38,21.62ZM2.75,9.5A6.75,6.75,0,1,1,9.5,16.25,6.76,6.76,0,0,1,2.75,9.5Z" fill="#6C6F76"></path>
+                    </svg>
+                
+                </a>
                 <!-- <ul class="navbar-nav d-none d-md-flex flex-row">
                     <li id="menu-home"><a href="/" data-i18n="menu.home" style="font-family: Volte; font-size: 28px; font-weight: 500; line-height: 20px; color: #1f1845;">Consulte</a></li>
                     <li id="menu-about"><a href="/home/about" data-i18n="menu.about">Sobre nós</a></li>
                 </ul> -->
             </div>
-            <div class="d-flex justify-content-center align-items-center position-relative flex-row-reverse flex-lg-row">
-                <button class="navbar-toggler d-flex d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <a href="@ViewBag.CrmUrl" class="btn-menu-primary" rel="noopener noreferrer" data-i18n="menu.login">Login</a>
+            <div class="d-flex justify-content-center align-items-center position-relative">
+                <!-- <button class="navbar-toggler d-flex d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <a href="@ViewBag.CrmUrl" class="btn-menu-primary" rel="noopener noreferrer" data-i18n="menu.login">Login</a> -->
+
+
+                <svg class="d-flex d-md-none" style="margin-left:10px;height: 22px;width: 22px;margin-right:5px;" xmlns="
+                http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="16" width="16" alt="Search">
+                <path d="M23.38,21.62l-6.53-6.53a9.15,9.15,0,0,0,1.9-5.59,9.27,9.27,0,1,0-3.66,7.36l6.53,6.53a1.26,1.26,0,0,0,1.76,0A1.25,1.25,0,0,0,23.38,21.62ZM2.75,9.5A6.75,6.75,0,1,1,9.5,16.25,6.76,6.76,0,0,1,2.75,9.5Z" fill="#6C6F76" style="
+                    fill: #212529;
+                "></path>
+                </svg>
+
+                <button class="navbar-toggler d-flex" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <!-- <a href="@ViewBag.CrmUrl" class="btn-menu-primary" rel="noopener noreferrer" data-i18n="menu.login">Login</a> -->
             </div>
         </div>
     </nav>

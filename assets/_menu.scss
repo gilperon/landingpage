@@ -4,7 +4,7 @@
 * Menu Navigation
 *
 */
-$menu-size-height:70px;
+$menu-size-height:64px;
 /*Menu Wrap Sticky*/
 #header-wrap{ 
     min-height:$menu-size-height; 
@@ -31,6 +31,34 @@ $menu-size-height:70px;
         animation: navbarFixed 0.8s;
         z-index: 100;
     }
+
+    .logo-icon{
+
+        width:90px;
+        margin-right: -46px;
+        transform:scaley(-1);
+
+        @media (min-width: 768px) {
+            margin: 6px 0;
+            width:108px;
+            margin-right: -57px;
+        }
+
+    }
+
+    .logo-slogan{
+        font-family: Volte;font-size: 22px;font-weight: 500;line-height: 20px;color: #1f1845;letter-spacing: -1px;margin-bottom: -4px;margin-left: -3px;
+
+        
+
+        @media (min-width: 768px) {
+
+            font-family: Volte;font-size: 25.5px;font-weight: 500;line-height: 20px;color: #1f1845;letter-spacing: -1px;margin-bottom: -2.5px;margin-left: -2px;
+
+        }
+
+    }
+
 
     .logo {
         // width: 95px;
