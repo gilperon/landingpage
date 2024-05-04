@@ -1,5 +1,6 @@
 
 @import '_menu';
+@import '_footer';
 
 a{
     text-decoration:none;
@@ -54,7 +55,7 @@ $body-font: "Volte", Arial, sans-serif;
 }
 
 
-@include typography;
+
 
 
 
@@ -66,6 +67,7 @@ $body-font: "Volte", Arial, sans-serif;
 
 
 #hero-cover-world{
+    //@include typography;
     .container{
         //max-width:1240px;
     }

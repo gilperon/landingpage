@@ -17,8 +17,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
 
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css" integrity="sha512-0/rEDduZGrqo4riUlwqyuHDQzp2D1ZCgH/gFIfjMIL5az8so6ZiXyhf1Rg8i6xsjv+z/Ubc4tt1thLigEcu6Ug==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="assets/global.js"></script>
     <link href="assets/style.css" rel="stylesheet">
 
@@ -88,7 +86,7 @@ background: url(https://static.wixstatic.com/media/e36e55_f0012f4d5e024c6abe1a78
     <nav id="desktop-menu" class="navbar" aria-label="Desktop Menu">
 
         <div class="container">
-            <div class="d-flex justify-content-center align-items-center" style="zoom:.98;">
+            <div class="d-flex justify-content-center align-items-center">
                 
                 <!--Logo-->
                 <!-- <a href="/"><img src="https://i.ibb.co/d0DJQff/bigdata-logo.png" class="logo"></a> -->
@@ -119,16 +117,13 @@ background: url(https://static.wixstatic.com/media/e36e55_f0012f4d5e024c6abe1a78
 
 
                 <!--Links-->
-                <a href="/" class="d-none d-md-flex d-md-none justify-content-center align-items-center" style=" min-width: 200px; color: #b3b8be; padding: 6px 16px 6px; margin-left: 20px; border: 1px solid #f4f1f1; font-size: 15px; border-radius: 20px; background: linear-gradient(0deg, rgba(105, 145, 214, .08), rgba(105, 145, 214, .08)); ">
+                <a href="/" class="d-none d-md-flex justify-content-center align-items-center" style=" min-width: 200px; color: #b3b8be; padding: 6px 16px 6px; margin-left: 20px; border: 1px solid #f4f1f1; font-size: 15px; border-radius: 20px; background: linear-gradient(0deg, rgba(105, 145, 214, .08), rgba(105, 145, 214, .08)); ">
                     Consultar empresa pelo nome ou CNPJ
                     <svg style="margin-left:30px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="16" width="16" class="text-neutral-900" alt="Search">
                         <path d="M23.38,21.62l-6.53-6.53a9.15,9.15,0,0,0,1.9-5.59,9.27,9.27,0,1,0-3.66,7.36l6.53,6.53a1.26,1.26,0,0,0,1.76,0A1.25,1.25,0,0,0,23.38,21.62ZM2.75,9.5A6.75,6.75,0,1,1,9.5,16.25,6.76,6.76,0,0,1,2.75,9.5Z" fill="#6C6F76"></path>
                     </svg>
                 
                 </a>
-
-
-
                 <!-- <ul class="navbar-nav d-none d-md-flex flex-row">
                     <li id="menu-home"><a href="/" data-i18n="menu.home" style="font-family: Volte; font-size: 28px; font-weight: 500; line-height: 20px; color: #1f1845;">Consulte</a></li>
                     <li id="menu-about"><a href="/home/about" data-i18n="menu.about">Sobre nós</a></li>
@@ -139,55 +134,14 @@ background: url(https://static.wixstatic.com/media/e36e55_f0012f4d5e024c6abe1a78
                 <a href="@ViewBag.CrmUrl" class="btn-menu-primary" rel="noopener noreferrer" data-i18n="menu.login">Login</a> -->
 
 
-                <!-- <svg class="d-flex" style="margin-left:10px;height: 22px;width: 22px;margin-right:5px;" xmlns="
-                http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="16" width="16" alt="Search">
-                <path d="M23.38,21.62l-6.53-6.53a9.15,9.15,0,0,0,1.9-5.59,9.27,9.27,0,1,0-3.66,7.36l6.53,6.53a1.26,1.26,0,0,0,1.76,0A1.25,1.25,0,0,0,23.38,21.62ZM2.75,9.5A6.75,6.75,0,1,1,9.5,16.25,6.76,6.76,0,0,1,2.75,9.5Z" fill="#6C6F76" style="
-                    fill: #212529;
-                "></path>
-                </svg> -->
-                <style>
-                    .pesquisa:hover{
-                        color: #000;
-                    }
-                </style>
-
-                <div style="
-    padding: 10px;
-    /* border: 1px solid #ddd; */
-    /* border-bottom: 1px solid #888; */
-    display: flex;
-    font-family: Nunito,Arial,sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    color: #b7b7b7;
-    padding: 10px 5px;
-    padding: 6px 15px 8px;
-    border-radius: 50px;
-    display: flex;
-    flex-direction: row-reverse;
-    border-right: 1px solid #eee;
-    border-radius: 0;
-    padding-right: 20px;
-" class="d-none"><span class="pesquisa">Pesquisar empresas</span>
-<svg class="d-flex" style="margin-left: 0px;height: 19px;width: 19px;margin-right: 8px;" xmlns="
+                <svg class="d-flex d-md-none" style="margin-left:10px;height: 22px;width: 22px;margin-right:5px;" xmlns="
                 http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="16" width="16" alt="Search">
                 <path d="M23.38,21.62l-6.53-6.53a9.15,9.15,0,0,0,1.9-5.59,9.27,9.27,0,1,0-3.66,7.36l6.53,6.53a1.26,1.26,0,0,0,1.76,0A1.25,1.25,0,0,0,23.38,21.62ZM2.75,9.5A6.75,6.75,0,1,1,9.5,16.25,6.76,6.76,0,0,1,2.75,9.5Z" fill="#6C6F76" style="
                     fill: #212529;
                 "></path>
                 </svg>
-</div>
 
-
-<svg class="d-flex" style="margin-left: 0px;height: 19px;width: 19px;margin-right: 8px;" xmlns="
-http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="16" width="16" alt="Search">
-<path d="M23.38,21.62l-6.53-6.53a9.15,9.15,0,0,0,1.9-5.59,9.27,9.27,0,1,0-3.66,7.36l6.53,6.53a1.26,1.26,0,0,0,1.76,0A1.25,1.25,0,0,0,23.38,21.62ZM2.75,9.5A6.75,6.75,0,1,1,9.5,16.25,6.76,6.76,0,0,1,2.75,9.5Z" fill="#6C6F76" style="
-    fill: #212529;
-"></path>
-</svg>
-<div style="width:1px;height:28px;background:#eee;margin-left:10px;" class="d-none d-md-flex"></div>
-                <button class="navbar-toggler d-flex" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-label="Toggle navigation" style="margin-left:15px !important;">
-                    <span class="navbar-toggler-icon" style="zoom:.8;"></span>
-                </button>
+                <button class="navbar-toggler d-flex" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <!-- <a href="@ViewBag.CrmUrl" class="btn-menu-primary" rel="noopener noreferrer" data-i18n="menu.login">Login</a> -->
             </div>
         </div>
@@ -230,7 +184,7 @@ http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="16" width="16" alt="Sear
             </section>
 
 
-            <section style="background:#1c49ad;" class="px-2 px-md-4 py-5 overflow-hidden">
+            <section style="background:#1c49ad;" class="px-3 px-md-4 py-5 overflow-hidden">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4 col-lg-5 d-flex align-items-center pb-3 pb-md-5">
@@ -243,6 +197,90 @@ http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="16" width="16" alt="Sear
                                     Informações estratégicas em uma base com mais de 50 milhões de empresas ativas e inativas.
                                 </p>
                                 <br><br>
+                                <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+                                <!-- <style>  
+                                .form-control:focus {  
+                                  box-shadow: none;  
+                                }  
+                                .form-control-underlined {  
+                                  border-width: 0;  
+                                  border-bottom-width: 1px;  
+                                  border-radius: 0;  
+                                  padding-left: 0;  
+                                }  
+                                body {  
+                                  background: black;  
+                                  min-height: 100vh;  
+                                  margin: 10px;  
+                                }  
+                                .form-control::placeholder {  
+                                  font-size: 0.95rem;  
+                                  color: #aaa;  
+                                  font-style: italic;  
+                                }  
+                                h5 {  
+                                font-family: 'Indie Flower', cursive;  
+                                font-size: 32px;  
+                                  color: #03A9F4;  
+                                  font-weight: bold;  
+                                }  
+                                </style> 
+                                
+                                <form action="">  
+                                    <div class="p-1 bg-light rounded rounded-pill shadow-sm mb-4">  
+                                      <div class="input-group">  
+                                        <input type="search" placeholder="search here" class="form-control border-0 bg-light">  
+                                        <div class="input-group-append">  
+                                          <button id="button-addon1" type="submit" class="btn btn-link text-primary"> <i class="fa fa-search"> </i> </button>  
+                                        </div>  
+                                      </div>  
+                                    </div>    
+                                  </form>   -->
+
+
+
+                                  <!-- <style>
+                                    .form-control-borderless {  
+    border: none;  
+}  
+.form-control-borderless:focus {  
+    border: none;  
+    outline: none;  
+    box-shadow: none;  
+}  
+.form-control-borderless:hover {  
+    border: none;  
+    outline: none;  
+    box-shadow: none;  
+}  
+.form-control-borderless:active {  
+    border: none;  
+    outline: none;  
+    box-shadow: none;  
+}  
+h5 {  
+    font-family: 'Indie Flower', cursive;  
+    font-size: 32px;  
+  color: gray;  
+  font-weight: bold;  
+  text-align: center;  
+}  
+                                  </style>
+                                  <form class="card card-sm">  
+                                    <div class="card-body row no-gutters align-items-center">  
+                                        <div class="col-auto">  
+                                            <i class="fas fa-search h4 text-body"> </i>  
+                                        </div>  
+                                             <div class="col">  
+                                            <input class="form-control form-control-lg form-control-borderless" type="search" placeholder="Search topics or keywords here...">  
+                                        </div>  
+                                                   <div class="col-auto">  
+                                            <button class="btn btn-lg btn-success" type="submit"> Search </button>  
+                                        </div>  
+                                         
+                                    </div>  
+                                </form>   -->
+                                
 
                                 <a href="/" class="d-flex justify-content-center align-items-center" style="min-width: 200px;color: #b3b8be;padding: 14px 17px 15px 22px;max-width: 92%;/* margin-left: 20px; */border: 1px solid #f4f1f1;font-size: 15px;border-radius: 50px;background: #fffdfd;justify-content: space-between !important;box-shadow: 3px 4px 2px  rgba(0,0,0,.2);">
                                     Digite o nome da empresa ou CNPJ
@@ -287,7 +325,7 @@ http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="16" width="16" alt="Sear
                                         <div class="w-icon">
                                             <span class="material-symbols-outlined">account_balance</span>
                                         </div>
-                                        <div class="w-label">Empresa MEI</div>
+                                        <div class="w-label">Empresa S.A</div>
                                         <div class="w-status">
                                             <span class="material-symbols-outlined">add</span>
                                             Detalhes
@@ -309,7 +347,7 @@ http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="16" width="16" alt="Sear
                                         <div class="w-icon">
                                             <span class="material-symbols-outlined">home</span>
                                         </div>
-                                        <div class="w-label">Empresa MEI</div>
+                                        <div class="w-label">Empresa S.A</div>
                                         <div class="w-status">
                                             <span class="material-symbols-outlined">add</span>
                                             Financeiro
@@ -397,82 +435,9 @@ http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="16" width="16" alt="Sear
 
 
 
-    
-
-    <footer class="footer-04">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
-                    <h2 class="footer-heading"><a href="#" class="logo">Contato</a></h2>
-                    <p style=" font-family: 'Nunito', Arial, sans-serif; font-size: 15px; line-height: 1.8; font-weight: normal; letter-spacing: 0;">Gostaria de informações mais específicas? <br> Deixe seu e-mail e entraremos em contato.</p>
-                    <!-- <a href="#">read more <span class="ion-ios-arrow-round-forward"></span></a> -->
-                    <form action="#" class="subscribe-form mt-4 mb-5">
-                        <div class="form-group d-flex">
-                          <input type="text" class="form-control rounded-left" placeholder="Enter email address">
-                          <button type="submit" class="form-control submit rounded-right"><span class="sr-only"></span><i class="ion-ios-send"></i></button>
-                        </div>
-                      </form>
-                      <br>
-                </div>
-                <!-- <div class="col-md-6 offset-lg-1 col-lg-2 mb-md-0 mb-4">
-                    <h2 class="footer-heading">Links</h2>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="py-1 d-block">Termos</a></li>
-                        <li><a href="#" class="py-1 d-block">Privacidade</a></li>
-                     </ul>
-                </div> -->
-                <div class="col-md-6 offset-lg-2 col-lg-3 mb-md-0 mb-4">
-                    <h2 class="footer-heading">TAG</h2>
-                    <div class="tagcloud">
-                        <a href="#" class="tag-cloud-link">EMPRESA</a>
-                        <a href="#" class="tag-cloud-link">CNPJ</a>
-                        <a href="#" class="tag-cloud-link">BIG DATA</a>
-                        <a href="#" class="tag-cloud-link">CONSULTA GRÁTIS</a>
-                        <a href="#" class="tag-cloud-link">SCORE</a>
-                        <a href="#" class="tag-cloud-link">SÓCIOS</a>
-                        <a href="#" class="tag-cloud-link">SOCIEDADE</a> 
-                        <a href="#" class="tag-cloud-link">INFORMAÇÕES</a>                        
-                      </div>
-                </div>
-                <div class="col-md-6 offset-lg-1 col-lg-3 mb-md-0 mb-4">
-                    
-        <h2 class="footer-heading">SOCIAL</h2>
-        <ul class="ftco-footer-social p-0">
-          <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter"><span class="ion-logo-twitter"></span></a></li>
-          <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook"><span class="ion-logo-facebook"></span></a></li>
-          <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Instagram"><span class="ion-logo-instagram"></span></a></li>
-        </ul>
-                </div>
-            </div>
-        </div>
-        <div class="w-100 mt-5 border-top py-5">
-            <div class="container">
-                <div class="row">
-          <div class="col-md-6 col-lg-8">
-
-            <p class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                © 2024 Banco de Dados ME - Todos os direitos reservados
-                <!-- <i class="ion-ios-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a> -->
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-          </div>
-          <div class="col-md-6 col-lg-4 text-md-end">
-              <p class="mb-0 list-unstyled">
-                  <!-- <a class="mr-md-3" href="#">Termos de uso</a> -->
-                  <a class="me-md-3" href="#">Termo de Serviço</a>
-                  <a class="me-md-3" href="#">Política de Privacidade</a>
-                  <a class="me-md-3" href="#"><i class="ion-ios-send"></i></a>
-              </p>
-          </div>
-        </div>
-            </div>
-        </div>
-    </footer>
 
 
-
-
-
-     <main id="hero-cover-orange" class="d-none">
+     <main id="hero-cover-orange">
         <section style='background:#eee;'>
         <div class="container mb-5">
             <div class="row">
