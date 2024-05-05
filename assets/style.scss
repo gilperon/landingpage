@@ -56,6 +56,35 @@ $body-font: "Volte", Arial, sans-serif;
 
 
 
+/*
+*
+*    SEARCH
+*
+*/
+#bigSearch{
+    margin-top: 30px;
+    margin-bottom: -10px;
+    width:100%;
+    @media (min-width: 768px) {
+        width:92.5%;
+        margin-top: 60px;
+        margin-bottom: 0;
+    } 
+    box-shadow: 3px 4px 2px rgba(0,0,0,.2);
+    border-radius: 50px;
+    .input{
+        width: 100%;
+        height:56px;
+        input{
+            padding: .7em 1.5em .8em;
+            font-size: 15px;
+        }
+    }
+    i.icon{
+        font-size: 18px
+    }
+        
+}
 
 
 /*

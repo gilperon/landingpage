@@ -1,5 +1,110 @@
+
 /*
-    JS ara animar o Mapa e posicionar os elementos
+    SEARCH  JS
+*/
+
+$(window).on("load", function() {
+
+    temp = createMock();
+
+    $('.ui.search')
+        .search({
+            minCharacters: 1,
+            type: 'category',
+            source: temp,
+            maxResults: 15,
+            searchFields: ['title'],
+            onResultsOpen:function(){
+                // apenas adicionei um delay pra mostrar como pesquisando
+                $('.ui.search').addClass('loading');
+                setTimeout(function () {
+                    $('.ui.search').removeClass('loading');
+                }, 2000);
+                return true;
+            },
+            onSelect: function (result, response) {
+                if (clickBookmarked(result)) {
+                    $(this).search('hide results');
+                    return false
+                }
+                window.location.href = result.href;
+            },
+            error: {
+                noResults: 'Não há resultados com essa busca.',
+                noResults: function (message) {
+                    return temp;
+                }
+            },
+            templates: {
+                message: function (message, type) {
+                    let resultsHtml = `<div class="category"><div class="name">Empresa</div><div class="results">`;
+                        temp.forEach(function(item) {
+                            resultsHtml += `<a class="result"><div class="content"><div class="price">${item.price}</div><div class="title">${item.title}</div><div class="description">${item.description}</div></div></a>`;
+                        });
+                        resultsHtml += `</div></div>`;
+                        return resultsHtml;
+                        //return `<div class="message"><div class="header">Sem Resultados</div><div class="description">${message}</div></div>`;;
+                  },
+            }
+        });
+
+
+
+    function createMock(){
+            let temp = [];
+
+            temp.push({
+                category: "Empresa",
+                title: "Google Inc.",
+                description: "78.507.991/0001-22",
+                price: 50,
+                href: "https://example.com/product1"
+            });
+
+            temp.push({
+                category: "Empresa",
+                title: "Microsoft Corporation",
+                description: "82.642.114/0001-10",
+                price: 70,
+                href: "https://example.com/product2"
+            });
+
+            temp.push({
+                category: "Empresa",
+                title: "Apple Inc.",
+                description: "60.303.245/0001-97",
+                price: 80,
+                href: "https://example.com/product3"
+            });
+
+            temp.push({
+                category: "Empresa",
+                title: "Amazon.com Inc.",
+                description: "28.690.527/0001-05",
+                price: 40,
+                href: "https://example.com/product4"
+            });
+
+            temp.push({
+                category: "Empresa",
+                title: "Facebook Inc.",
+                description: "05.397.903/0001-45",
+                price: 90,
+                href: "https://example.com/product5"
+            });
+            return temp; 
+
+    }
+
+
+
+});
+
+
+
+
+/*
+    JS ara animar o Mapa e posicionar os elementos (MAPA)
 */
 $(window).on("load", function() {
 
