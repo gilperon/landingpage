@@ -67,7 +67,7 @@ $body-font: "Volte", Arial, sans-serif;
     margin-bottom: 40px;
     width:100%;
     @media (min-width: 768px) {
-        width:92.5%;
+        width:95%;
         margin-top: 60px;
         margin-bottom: 0;
     } 
@@ -299,7 +299,6 @@ $map-font-label: "Nunito", Arial, sans-serif;
 $world-h1-font-family: "Volte", Arial, sans-serif;
 #hero-cover{
 
-
     h1{
         font-weight: 800;
         line-height: 1.1;
@@ -317,7 +316,7 @@ $world-h1-font-family: "Volte", Arial, sans-serif;
         font-weight: 300;
         max-width: 90%;
         @media (min-width: 992px) {
-            max-width: 450px;
+            max-width: 420px;
             font-size: 21px;
         }
     }
@@ -344,7 +343,7 @@ $world-h1-font-family: "Volte", Arial, sans-serif;
     }
 
     h1 {
-        font-size: calc(1.375rem + 3.2vw);
+        font-size: calc(1.375rem + 3.8vw);
     }
 
     h2 {
@@ -362,7 +361,7 @@ $world-h1-font-family: "Volte", Arial, sans-serif;
 
     @media (min-width: 1200px) {
         h1 {
-            font-size: 3.4rem;
+            font-size: 3.75rem;
         }
         h2 {
             font-size: 2rem;
