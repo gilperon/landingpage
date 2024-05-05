@@ -300,6 +300,11 @@ $map-font-label: "Nunito", Arial, sans-serif;
 $world-h1-font-family: "Volte", Arial, sans-serif;
 #hero-cover{
 
+    > section{
+        background:#1c49ad;
+        overflow-y:hidden; // evita scroll horizontal
+    }
+
     h1{
         font-weight: 800;
         line-height: 1.1;
