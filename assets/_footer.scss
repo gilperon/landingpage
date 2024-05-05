@@ -16,8 +16,8 @@ border-radius:$x;
     font-weight: normal;
 	padding: 4.1em 0;
 	> div{
-		padding-left:2rem;
-		padding-right:2rem;
+		padding-left:1.8rem;
+		padding-right:1.8rem;
 		&:last-child{
 			padding:40px 1rem 42px !important;
 		}
@@ -127,9 +127,9 @@ textarea.form-control {
 		letter-spacing: 1px;
 		.logo{
 			letter-spacing: none;
-			font-size: 16px;
+			font-size: 13px;
 			color: $white;
-			text-transform: capitalize;
+			text-transform: uppercase;
 		}
 	}
 	p{
