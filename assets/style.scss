@@ -1,4 +1,5 @@
 
+@import '_fonts';
 @import '_menu';
 @import '_footer';
 
@@ -349,10 +350,15 @@ $world-h1-font-family: "Volte", Arial, sans-serif;
     h2 {
         font-size: calc(1.375rem + 2.5vw);
     }
+    @media (min-width: 768px) {
+        h1 {
+            font-size: 3rem;
+        }
 
+    }
     @media (min-width: 992px) {
         h1 {
-            font-size: 2.8rem;
+            font-size: 3.2rem;
         }
         h2 {
             font-size: 2.7rem;
