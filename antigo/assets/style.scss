@@ -58,6 +58,27 @@ $body-font: "Volte", Arial, sans-serif;
 
 
 
+
+#hero-cover-orange{
+    .container{
+        max-width:1240px;
+    }
+}
+
+
+#hero-cover-world{
+    //@include typography;
+    .container{
+        //max-width:1240px;
+    }
+}
+
+
+
+
+
+
+
 /*
 *
 *    WORLDMAP
@@ -267,7 +288,7 @@ $map-font-label: "Nunito", Arial, sans-serif;
 
 
 $world-h1-font-family: "Volte", Arial, sans-serif;
-#hero-cover{
+.wrap-world-slogan{
 
 
     h1{
@@ -340,4 +361,6 @@ $world-h1-font-family: "Volte", Arial, sans-serif;
     }
     
 }
+
+
 

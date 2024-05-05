@@ -14,21 +14,6 @@ border-radius:$x;
     font-size: 15px;
     line-height: 1.8;
     font-weight: normal;
-	padding: 4.1em 0;
-	> div{
-		padding-left:2rem;
-		padding-right:2rem;
-		&:last-child{
-			padding:40px 1rem 42px !important;
-		}
-	}
-	@media (min-width: 992px) {
-		padding: 6.5em 0;
-		> div{
-			padding-left:calc(var(--bs-gutter-x) * .5);
-			padding-right:calc(var(--bs-gutter-x) * .5);
-		}
-	}
 }
 
 
@@ -108,7 +93,9 @@ textarea.form-control {
 	}
 }
 
-
+footer{
+	padding: 7em 0;
+}
 
 //FOOTER 04
 .footer-04{
@@ -142,9 +129,6 @@ textarea.form-control {
 		li{
 			a{
 				color: $white;
-				&:hover{
-					background:#111;
-				}
 			}
 		}
 	}
@@ -152,9 +136,6 @@ textarea.form-control {
 		a{
 			border: 1px solid rgba(255,255,255,.1);
 			color: $white;
-			&:hover{
-				background:#111;
-			}
 		}
 	}
 
@@ -187,7 +168,6 @@ textarea.form-control {
 				outline : none !important;
 				color: rgba(255,255,255,.3) !important;
 				font-size: 16px;
-				padding:.375rem 1rem;
 				@include border-radius(0);
 				&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
 				  color: rgba(255,255,255,.3) !important;
@@ -223,7 +203,6 @@ textarea.form-control {
 		}
 	}
 	.copyright{
-		color:rgba(255,255,255,.25);
 		a{
 			color: rgba(255,255,255,.5);
 		}
