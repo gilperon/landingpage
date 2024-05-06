@@ -88,6 +88,21 @@ $body-font: "Volte", Arial, sans-serif;
         
 }
 
+#searchDesktop{
+    display:none;
+    flex-grow: 1;
+    justify-content: end;
+    padding:0 20px;
+    > div{
+        max-width: 350px;
+        width: 100%;
+        input{
+            padding:.7em 1.5em .8em;
+        }
+    }
+        
+}
+
 
 /*
 *

@@ -1,4 +1,12 @@
 
+$(document).ready(function() {
+    $('#openSearch, #closeSearch').click(function() {
+        $('#openSearch, #closeSearch').toggle(); 
+        $('#searchDesktop').toggleClass('d-flex');
+  });
+
+});
+
 /*
     SEARCH  JS
 */
@@ -16,12 +24,46 @@ $(window).on("load", function() {
             searchFields: ['title'],
             onResultsOpen:function(){
                 // apenas adicionei um delay pra mostrar como pesquisando
-                $('.ui.search').addClass('loading');
+                $('#bigSearch').addClass('loading');
                 setTimeout(function () {
-                    $('.ui.search').removeClass('loading');
+                    $('#bigSearch').removeClass('loading');
                 }, 2000);
                 return true;
             },
+            onSelect: function (result, response) {
+                if (clickBookmarked(result)) {
+                    $(this).search('hide results');
+                    return false
+                }
+                window.location.href = result.href;
+            },
+            error: {
+                noResults: 'Não há resultados com essa busca.',
+                noResults: function (message) {
+                    return temp;
+                }
+            },
+            templates: {
+                message: function (message, type) {
+                    let resultsHtml = `<div class="category"><div class="name">Empresa</div><div class="results">`;
+                        temp.forEach(function(item) {
+                            resultsHtml += `<a class="result"><div class="content"><div class="price">${item.price}</div><div class="title">${item.title}</div><div class="description">${item.description}</div></div></a>`;
+                        });
+                        resultsHtml += `</div></div>`;
+                        return resultsHtml;
+                        //return `<div class="message"><div class="header">Sem Resultados</div><div class="description">${message}</div></div>`;;
+                  },
+            }
+        });
+
+
+        $('#searchDesktop')
+        .search({
+            minCharacters: 1,
+            type: 'category',
+            source: temp,
+            maxResults: 15,
+            searchFields: ['title'],
             onSelect: function (result, response) {
                 if (clickBookmarked(result)) {
                     $(this).search('hide results');
