@@ -6,7 +6,7 @@ $(document).ready(function() {
     $('#openSearch').toggle(); 
 
     if(isDesktop()){
-        $('#searchDesktop').toggleClass('d-md-flex');
+        $('#searchDesktop').toggleClass('d-md-flex slideDown');
     }else{ 
         $('.container-searchMobile').slideDown().toggleClass('d-flex d-md-none');
         $('#mobileIcon').hide();
@@ -19,7 +19,7 @@ $(document).ready(function() {
     $('#closeSearch').toggle();
     $('#openSearch').toggle(); 
     if(isDesktop()){
-        $('#searchDesktop').toggleClass('d-md-flex');
+        $('#searchDesktop').toggleClass('d-md-flex slideDown');
     }else{
         $('.container-searchMobile').slideUp().toggleClass('d-flex d-md-none');
         $('#mobileIcon').show();
@@ -127,7 +127,7 @@ $(window).on("load", function() {
                 category: "Empresa",
                 title: "Google Inc.",
                 description: "78.507.991/0001-22",
-                price: 50,
+                price: `<span class="material-symbols-outlined" style="margin-top:5px;margin-right:-5px;">check_small</span>`,
                 href: "https://example.com/product1"
             });
 
@@ -135,7 +135,7 @@ $(window).on("load", function() {
                 category: "Empresa",
                 title: "Microsoft Corporation",
                 description: "82.642.114/0001-10",
-                price: 70,
+                price: `<span class="material-symbols-outlined" style="margin-top:5px;margin-right:-5px;filter: grayscale(1); opacity: .5;">check_small</span>`,
                 href: "https://example.com/product2"
             });
 
@@ -143,7 +143,7 @@ $(window).on("load", function() {
                 category: "Empresa",
                 title: "Apple Inc.",
                 description: "60.303.245/0001-97",
-                price: 80,
+                price: `<span class="material-symbols-outlined" style="margin-top:5px;margin-right:-5px;filter: grayscale(1); opacity: .5;">check_small</span>`,
                 href: "https://example.com/product3"
             });
 
@@ -151,7 +151,7 @@ $(window).on("load", function() {
                 category: "Empresa",
                 title: "Amazon.com Inc.",
                 description: "28.690.527/0001-05",
-                price: 40,
+                price: `<span class="material-symbols-outlined" style="margin-top:5px;margin-right:-5px;filter: grayscale(1); opacity: .5;">check_small</span>`,
                 href: "https://example.com/product4"
             });
 
@@ -159,7 +159,7 @@ $(window).on("load", function() {
                 category: "Empresa",
                 title: "Facebook Inc.",
                 description: "05.397.903/0001-45",
-                price: 90,
+                price: `<span class="material-symbols-outlined" style="margin-top:5px;margin-right:-5px;filter: grayscale(1); opacity: .5;">check_small</span>`,
                 href: "https://example.com/product5"
             });
             return temp; 
