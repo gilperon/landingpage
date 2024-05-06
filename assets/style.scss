@@ -104,6 +104,26 @@ $body-font: "Volte", Arial, sans-serif;
 }
 
 
+.container-searchMobile{
+    background:#eee;padding:1em 0;
+}
+
+#searchMobile{
+    .input{
+        width: 100%;
+        height:46px;
+        input{
+            padding: .7em 1.5em .8em;
+            font-size: 15px;
+        }
+    }
+    i.icon{
+        font-size: 16px
+    }
+}
+
+
+
 /*
 *
 *    WORLDMAP

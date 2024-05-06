@@ -57,7 +57,7 @@ $(window).on("load", function() {
         });
 
 
-        $('#searchDesktop')
+        $('#searchDesktopGo,#searchMobileGo')
         .search({
             minCharacters: 1,
             type: 'category',
