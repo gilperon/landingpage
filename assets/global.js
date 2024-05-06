@@ -7,7 +7,7 @@ $(window).on("load", function() {
 
     temp = createMock();
 
-    $('.ui.search')
+    $('#bigSearch')
         .search({
             minCharacters: 1,
             type: 'category',

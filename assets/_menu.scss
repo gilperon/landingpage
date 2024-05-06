@@ -80,7 +80,10 @@ $menu-size-height:64px;
         border-color: transparent;
         border: 0;
         padding: 0;
-        margin-left: 12px;
+        margin-left: 10px;
+        @media (min-width: 768px) {
+            margin-left: 15px;
+        }
 
         &:focus {
             box-shadow: none;
