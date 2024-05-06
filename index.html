@@ -74,39 +74,11 @@ background: url(https://static.wixstatic.com/media/e36e55_f0012f4d5e024c6abe1a78
                     </svg>
                     <span class="logo-slogan">Pesquise</span>
 
-
-                    
-
-
-                <!--Links-->
-                <a href="/" class="d-none d-md-flex d-md-none justify-content-center align-items-center" style=" min-width: 200px; color: #b3b8be; padding: 6px 16px 6px; margin-left: 20px; border: 1px solid #f4f1f1; font-size: 15px; border-radius: 20px; background: linear-gradient(0deg, rgba(105, 145, 214, .08), rgba(105, 145, 214, .08)); ">
-                    Consultar empresa pelo nome ou CNPJ
-                    <svg style="margin-left:30px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="16" width="16" class="text-neutral-900" alt="Search">
-                        <path d="M23.38,21.62l-6.53-6.53a9.15,9.15,0,0,0,1.9-5.59,9.27,9.27,0,1,0-3.66,7.36l6.53,6.53a1.26,1.26,0,0,0,1.76,0A1.25,1.25,0,0,0,23.38,21.62ZM2.75,9.5A6.75,6.75,0,1,1,9.5,16.25,6.76,6.76,0,0,1,2.75,9.5Z" fill="#6C6F76"></path>
-                    </svg>
-                
-                </a>
-
-
-
-                <!-- <ul class="navbar-nav d-none d-md-flex flex-row">
-                    <li id="menu-home"><a href="/" data-i18n="menu.home" style="font-family: Volte; font-size: 28px; font-weight: 500; line-height: 20px; color: #1f1845;">Consulte</a></li>
-                    <li id="menu-about"><a href="/home/about" data-i18n="menu.about">Sobre nós</a></li>
-                </ul> -->
             </div>
-            <!-- <div class="d-flex" style="flex-grow: 1;margin:0 20px;">
-                <div class="ui fluid category search">
-                    <div class="ui icon input">
-                    <input class="prompt" type="text" placeholder="Digite o nome da empresa ou CNPJ">
-                    <i class="search icon"></i>
-                    </div>
-                    <div class="results"></div>
-                </div>
-            </div> -->
 
             <div id="searchDesktop">
                 <div>
-                    <div class="ui fluid category search w-100">
+                    <div class="ui fluid category search w-100" id="searchDesktopGo">
                         <div class="ui icon input w-100">
                         <input class="prompt" type="text" placeholder="Digite o nome da empresa ou CNPJ">
                         <i class="search icon"></i>
@@ -117,50 +89,6 @@ background: url(https://static.wixstatic.com/media/e36e55_f0012f4d5e024c6abe1a78
             </div>
 
             <div class="d-flex justify-content-center align-items-center position-relative">
-                <!-- <button class="navbar-toggler d-flex d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <a href="@ViewBag.CrmUrl" class="btn-menu-primary" rel="noopener noreferrer" data-i18n="menu.login">Login</a> -->
-
-
-                <!-- <svg class="d-flex" style="margin-left:10px;height: 22px;width: 22px;margin-right:5px;" xmlns="
-                http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="16" width="16" alt="Search">
-                <path d="M23.38,21.62l-6.53-6.53a9.15,9.15,0,0,0,1.9-5.59,9.27,9.27,0,1,0-3.66,7.36l6.53,6.53a1.26,1.26,0,0,0,1.76,0A1.25,1.25,0,0,0,23.38,21.62ZM2.75,9.5A6.75,6.75,0,1,1,9.5,16.25,6.76,6.76,0,0,1,2.75,9.5Z" fill="#6C6F76" style="
-                    fill: #212529;
-                "></path>
-                </svg> -->
-                <style>
-                    .pesquisa:hover{
-                        color: #000;
-                    }
-                </style>
-
-                <div style="
-    padding: 10px;
-    /* border: 1px solid #ddd; */
-    /* border-bottom: 1px solid #888; */
-    display: flex;
-    font-family: Nunito,Arial,sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    color: #b7b7b7;
-    padding: 10px 5px;
-    padding: 6px 15px 8px;
-    border-radius: 50px;
-    display: flex;
-    flex-direction: row-reverse;
-    border-right: 1px solid #eee;
-    border-radius: 0;
-    padding-right: 20px;
-" class="d-none"><span class="pesquisa">Pesquisar empresas</span>
-<svg class="d-flex" style="margin-left: 0px;height: 19px;width: 19px;margin-right: 8px;" xmlns="
-                http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="16" width="16" alt="Search">
-                <path d="M23.38,21.62l-6.53-6.53a9.15,9.15,0,0,0,1.9-5.59,9.27,9.27,0,1,0-3.66,7.36l6.53,6.53a1.26,1.26,0,0,0,1.76,0A1.25,1.25,0,0,0,23.38,21.62ZM2.75,9.5A6.75,6.75,0,1,1,9.5,16.25,6.76,6.76,0,0,1,2.75,9.5Z" fill="#6C6F76" style="
-                    fill: #212529;
-                "></path>
-                </svg>
-</div>
-
-
-
 
                 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close" style="display:none;margin-left: -15px; box-shadow: none; outline: none; zoom: .8; margin-right: 5px;" id="closeSearch"></button>
                 <svg style="display:flex;margin-left: 0px;height: 20px;width: 20px;margin-right: 8px;cursor:pointer;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="16" width="16" alt="Search" id="openSearch">
@@ -173,6 +101,19 @@ background: url(https://static.wixstatic.com/media/e36e55_f0012f4d5e024c6abe1a78
             </div>
         </div>
     </nav>
+    <div class="d-flex d-md-none container-searchMobile">
+        <div class="container">
+            <div class="row">
+                    <div class="ui fluid category search w-100" id="searchMobile">
+                        <div class="ui icon input w-100">
+                        <input class="prompt" type="text" placeholder="Digite o nome da empresa ou CNPJ">
+                        <i class="search icon"></i>
+                        </div>
+                        <div class="results"></div>
+                    </div>
+            </div>
+        </div>
+    </div>
 </header>
 
 
