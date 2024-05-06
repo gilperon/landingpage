@@ -1,9 +1,37 @@
 
 $(document).ready(function() {
-    $('#openSearch, #closeSearch').click(function() {
-        $('#openSearch, #closeSearch').toggle(); 
-        $('#searchDesktop').toggleClass('d-flex');
+   $('#openSearch').click(function() {
+
+    $('#closeSearch').toggle();
+    $('#openSearch').toggle(); 
+
+    if(isDesktop()){
+        $('#searchDesktop').toggleClass('d-md-flex');
+    }else{ 
+        $('.container-searchMobile').slideDown().toggleClass('d-flex d-md-none');
+        $('#mobileIcon').hide();
+    }
+  
   });
+
+
+  $('#closeSearch').click(function() {
+    $('#closeSearch').toggle();
+    $('#openSearch').toggle(); 
+    if(isDesktop()){
+        $('#searchDesktop').toggleClass('d-md-flex');
+    }else{
+        $('.container-searchMobile').slideUp().toggleClass('d-flex d-md-none');
+        $('#mobileIcon').show();
+    }
+   
+    
+
+  });
+
+  function isDesktop(){
+    return $(window).width() > 768 ? true : false;
+  }
 
 });
 
@@ -57,7 +85,7 @@ $(window).on("load", function() {
         });
 
 
-        $('#searchDesktopGo,#searchMobileGo')
+        $('#searchDesktopGo,#searchMobile')
         .search({
             minCharacters: 1,
             type: 'category',
