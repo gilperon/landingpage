@@ -30,7 +30,7 @@ $(document).ready(function() {
         });
     });
 
-    $('#formEmail').click(function(e) {
+    $('#formEmail').submit(function(e) {
         e.preventDefault();
 
         let positionModal = isDesktop() ? 'center' : 'left';
