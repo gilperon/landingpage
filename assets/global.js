@@ -14,6 +14,38 @@ $(document).ready(function() {
   
   });
 
+  
+  $('#mobileIcon').click(function() {
+
+    let positionModal = isDesktop() ? 'center' : 'top';
+       
+        Swal.fire({
+            html: `
+            <div style="padding:20px 5px 0;"><h2 style="margin-bottom:10px;">Essa é uma versão beta.</h2>O menu está temporariamente desativado.</div>
+            `,
+            position: positionModal, 
+            showConfirmButton: true,
+            confirmButtonText: 'OK',
+            confirmButtonColor: '#1C49AD'
+        });
+    });
+
+    $('#formEmail').click(function(e) {
+        e.preventDefault();
+
+        let positionModal = isDesktop() ? 'center' : 'top';
+           
+            Swal.fire({
+                html: `
+                <div style="padding:20px 5px 0;"><h2 style="margin-bottom:10px;">Essa é uma versão beta.</h2>O cadastro de e-mail está desativado.</div>
+                `,
+                position: positionModal, 
+                showConfirmButton: true,
+                confirmButtonText: 'OK',
+                confirmButtonColor: '#1C49AD'
+            });
+        });
+
 
   $('#closeSearch').click(function() {
     $('#closeSearch').toggle();
