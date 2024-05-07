@@ -3,6 +3,10 @@
 @import '_menu';
 @import '_footer';
 
+html,body{
+    overflow-y:hidden;
+}
+
 a{
     text-decoration:none;
 }
