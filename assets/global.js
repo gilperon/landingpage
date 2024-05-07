@@ -23,7 +23,7 @@ $(document).ready(function() {
             html: `
             <div style="padding:20px 5px 0;"><h2 style="margin-bottom:10px;">Essa é uma versão beta.</h2>O menu está temporariamente desativado.</div>
             `,
-            position: positionModal, 
+            position: 'center', 
             showConfirmButton: true,
             confirmButtonText: 'OK',
             confirmButtonColor: '#1C49AD'
@@ -33,13 +33,13 @@ $(document).ready(function() {
     $('#formEmail').click(function(e) {
         e.preventDefault();
 
-        let positionModal = isDesktop() ? 'center' : 'top';
+        let positionModal = isDesktop() ? 'center' : 'left';
            
             Swal.fire({
                 html: `
                 <div style="padding:20px 5px 0;"><h2 style="margin-bottom:10px;">Essa é uma versão beta.</h2>O cadastro de e-mail está desativado.</div>
                 `,
-                position: positionModal, 
+                position: 'center', 
                 showConfirmButton: true,
                 confirmButtonText: 'OK',
                 confirmButtonColor: '#1C49AD'
